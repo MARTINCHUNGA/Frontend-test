@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react'
+import './App.css'
+import MaterialForm from "./components/materialForm";
+import SignInOutContainer from "./container/index"
+import MyTable from './components/MyTable'
+import DataTable from './components/Table';
+import TollDetails from './components/TollDetails';
+import VehicleDetails from './components/Vehichle';
+import TollBooking from './components/TollBooking';
+import BarChart from './components/BarChart';
+import Customer from './components/Customer';
+import FairDetails from './components/FairDetails';
+import AddStaff from './components/AddStaff';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SignInOutContainer />
+      {/* <TollDetails />
+      <VehicleDetails />
+      <TollBooking />
+      < Customer />
+      < FairDetails /> */}
+      
+      
     </div>
   );
 }
